@@ -1,0 +1,89 @@
+\documentclass[11pt,obeyspaces]{article}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amssymb}
+\usepackage{pdfsync}
+\textwidth = 6.0 in
+\textheight =  8 in
+\oddsidemargin = 0 in
+\evensidemargin = 0 in
+\topmargin = 0.0 in
+\headheight = 0.0 in
+\headsep = 0 in
+\parskip = 0.2in
+\parindent = 0.0in
+\newcommand{\la}{\lambda}
+\newcommand{\lra}{$\longrightarrow$}
+\newcommand{\ch}{$\bigtriangleup$}
+
+
+\usepackage{fixltx2e}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathrsfs}
+\usepackage{graphicx,enumerate,courier}
+\usepackage{framed}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\begin{document}
+
+
+\centerline{\bf \Huge Github Instructions}
+\centerline{\sc For Pushing To Your First Repository}
+\bigskip
+
+\begin{framed}
+\centerline{\sc some vocabulary:} 
+{\bf Repository} (n): a directory on Github that contains a project \\
+{\bf Fork} (v): To copy someone else's repository into your profile, so that it's available as one of your own repositories \\
+{\bf Clone} (v): To make a copy of one of your repositories to your computer \\
+{\bf Pull} (v): You submit a pull request if you think your code should be accepted into someone else's; you accept a pull request if you're in a position of authority and want to accept someone else's code\\
+{\bf Master} (n): The trunk. The "official" working version of the project \\
+{\bf Branch} (n): A copy of the master that you edit \\
+{\bf Merge} (v): If your branch is compatible with the master, you can submit a pull request to combine the two (i.e., to merge)\\
+{\bf Diff} (n): Short for differential, it's the differences between the branch and the master\\
+{\bf Add} (v): To stage, or track, the files -- must be done before you commit, which must be done before you push \\
+{\bf Commit} (v): To save a copy of the file, which you must do before you push \\
+{\bf Push} (v): To make something from your computer available to manipulate on Github 
+\end{framed}
+
+\centerline{\sc to configure git:}
+\centerline{\small blue is specific to me, black is general}
+\path{> git config --global user.email "}\textcolor{blue}{\path{eliz.s.grace@gmail.com}}\path{"}\\
+\path{> git config --global user.name} "\textcolor{blue}{\path{Elizabeth Grace}}\path{"}\\ \\
+
+\centerline{\sc to push to a repository:}
+\path{> cd ~}\\
+Create a git folder "thesis" in home directory (must have same name as the git repository):\\
+\path{> git clone} \textcolor{blue}{\path{https://github.com/elizabethgrace/thesis.git}} \\
+Copy files to the git folder: \\
+\path{> cd} \textcolor{blue}{\path{~/Documents/Thesis}} \\
+\path{> cp} \textcolor{blue}{\path{-r IDL ~/thesis/}} \\
+For the status: \\
+\path{> git status} \\
+To {\bf add}, which you need to do before you commit ({\bf .} means "all"): \\
+\path{> git add .} \\ 
+To {\bf commit} files, where {\bf -m} specifies that you're going to add a message flag and "initial commit" is the message here: \\
+\path{> git commit -m "initial commit"} \\
+To check that the files were committed:\\
+\path{> git status}\\
+To push the files to Github:\\
+\path{> git push origin master}\\
+
+\bigskip
+
+\centerline{Shoutout to \href{https://github.com/annanuxoll}{\bf Anna Nuxoll} (clickable) for helping me out with all this!}
+
+
+
+
+
+
+
+
+\end{document}
